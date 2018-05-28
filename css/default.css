@@ -54,11 +54,6 @@ body, html{
     resize:none;
 
 }
-#copyThis{
-    display:fixed;
-    top:0px;
-    left:-5000px;
-}
 textarea{
 }
 .crispbutton{
