@@ -1,0 +1,78 @@
+/*
+All rights reserved. Copyright Robert Roy 2016.
+*/
+/* 
+    Created on : Jan 15, 2017, 2:01:54 PM
+    Author     : Robert Roy <www.robertsworkspace.com>
+*/
+
+*{
+    position:relative;
+    color:black;
+    padding:0px;
+    margin:0px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+p{
+    max-width:450px;
+}
+img{
+    max-width:100%;
+    max-height:100%;
+}
+#main{
+    padding-bottom:50px;
+    text-align: center;
+}
+body, html{
+    text-align:center;
+    min-height:100%;
+    min-width:100%;
+}
+#div{
+    text-align:center;
+    font-size:12px;
+    display:block;
+    width:100%;
+}
+#output{
+    font-size:12px;
+    display:block;
+    width:100%;
+}
+.input[type="text"], textarea{
+    background-color:#f0f0f0;
+    display:inline-flex;
+    width:calc(100% - 20px);
+    color:black;
+    border-radius:1px;
+    padding:5px;
+    margin:5px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:12px;
+    resize:none;
+
+}
+#copyThis{
+    display:fixed;
+    top:0px;
+    left:-5000px;
+}
+textarea{
+}
+.crispbutton{
+    font-size:18px;
+    color:black;
+    width:auto;
+    margin-top:0px;
+    display:inline-block;
+    min-height:38px;
+    margin:auto;
+    padding:5px;
+    border-radius:5px;
+    border:1px #AAAAAA;
+    border-style:solid;
+    background:#f0f0f0;
+    margin-bottom:5px;
+}
