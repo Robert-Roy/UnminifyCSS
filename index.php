@@ -13,9 +13,9 @@ All rights reserved. Copyright Robert Roy 2018.
     </head>
     <body>            
         <div><label class="label" for="input">Enter Minified CSS:</label></div>
-        <textarea type="text" rows="4" id="input" name="input">This page will not work without JavaScript.</textarea>
-        <!--<input id="copy" class="crispbutton" style="margin-top:3px" type="submit" value="Copy">-->
-        <textarea type="text" rows="4" id="output" name="output"></textarea>
+        <textarea id="input" type="text" rows="4" name="input">This page will not work without JavaScript.</textarea>
+        <input id="copy" class="crispbutton" style="margin-top:3px" type="submit" value="Copy">
+        <textarea id="output" type="text" rows="4" name="output"></textarea>
         <input id="copyThis" type="text" name="copyThis">
     </body>
 </html>

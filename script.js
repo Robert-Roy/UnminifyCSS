@@ -9,12 +9,10 @@
 
 $(document).ready(function () {
     var $input = $("#input");
-    var $copyThis = $("#copyThis");
     var $output = $("#output");
     var $copy = $("#copy");
 
     $input.val("");
-    $copyThis.val("");
     $input.keypress(function (e) {
         if (e.keyCode === 13) {
             e.preventDefault();
@@ -25,9 +23,9 @@ $(document).ready(function () {
         setTimeout(changeInput($(this)), 1);
     });
     $copy.click(function () {
-        var target = document.getElementById("copyThis");
+        var target = document.getElementById("output");
         target.setSelectionRange(0, target.value.length);
-        $copyThis.focus();
+        $output.focus();
         window.scrollTo(0, 0);
         try {
             document.execCommand("copy");
@@ -41,11 +39,9 @@ $(document).ready(function () {
     function changeInput(that) {
         var output = tryConvert(that.val());
         $output.html(output);
-        $copyThis.val(output);
         if (that.val() === "") {
             $output.html("");
         }
-        ;
         $copy.val("Copy");
     }
 });
